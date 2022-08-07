@@ -1,5 +1,26 @@
 .App {
   text-align: center;
+  padding: 80px 100px;
+  
+}
+.form{
+  width: 500px;
+}
+
+ul {
+  list-style-type: none;
+}
+.container{
+  background-color:rgb(116, 206, 224);
+  align-items:center;
+  margin-top: 20px;
+  height: 200px;
+  width: 800px;
+  border-radius: 25px;
+}
+.btn{
+ 
+  margin-left: 10px;
 }
 
 .App-logo {
