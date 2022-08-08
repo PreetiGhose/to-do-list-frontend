@@ -69,16 +69,20 @@ function App() {
         ></input>
         <button className="btn btn-success ">Add</button>
       </form>
-      {items.map((item, id) => {
-        return (
-          <List
-            item={item.name}
-            key={item._id}
-            id={item._id}
-            deleteItem={deleteItem}
-          />
-        );
-      })}
+      <div className="list-Items">
+        <ul>
+          {items.map((item, id) => {
+            return (
+              <List
+                item={item.name}
+                key={item._id}
+                id={item._id}
+                deleteItem={deleteItem}
+              />
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 }

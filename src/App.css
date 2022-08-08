@@ -6,9 +6,15 @@
 .form{
   width: 500px;
 }
+.list-Items{
+  text-align: left;
+  margin-left: 200px;
+  font-size:x-large;
+}
 
 ul {
   list-style-type: none;
+  margin-top: 100px;
 }
 .container{
   background-color:rgb(116, 206, 224);
