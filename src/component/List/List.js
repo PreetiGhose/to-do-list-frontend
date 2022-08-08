@@ -1,10 +1,13 @@
 import React from "react";
 
 const List = (props) => {
+  const delItem = () => {
+    props.deleteItem(props.id);
+  };
   return (
     <div>
       <li>
-        <input type="checkbox" onClick={props.deleteItem}></input> {props.item}
+        <input type="checkbox" onClick={delItem}></input> {props.item}
       </li>
     </div>
   );

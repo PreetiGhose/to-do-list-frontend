@@ -44,7 +44,17 @@ function App() {
     return setItems(jsonResult.data);
   };
 
-  const deleteItem = (id) => {};
+  const deleteItem = (id) => {
+    console.log(id);
+    const delresult = fetch("http://localhost:3001/delete", {
+      method: "POST",
+      body: JSON.stringify({ _id: id }),
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    }).then(fetchData());
+  };
 
   return (
     <div className="App container">
